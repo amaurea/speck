@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-from flipper import *
 import pickle
+from flipper import *
 p = flipperDict.flipperDict()
 p.readFromFile(sys.argv[1])
 freqs = p['frequencies']

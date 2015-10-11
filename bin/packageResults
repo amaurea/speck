@@ -1,7 +1,6 @@
 #!/usr/bin/env python
+import time, pwd
 from flipper import *
-import time
-import pwd
 from stat import *
 
 p = flipperDict.flipperDict()

@@ -1,12 +1,9 @@
 #!/usr/bin/env python
 
-from flipper import *
+import scipy, os, pickle, time
 from scipy.interpolate import splrep,splev
-import scipy
-import os
-import pickle
-import time
-import speckMisc
+from flipper import *
+from speck import speckMisc
 
 def weightedBinInAnnuli(p2d,weightMap,binningFile,trimAtL,powerOfL):
     binLo,binHi,binCent = fftTools.readBinningFile(binningFile)

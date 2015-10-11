@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-from flipper import *
 from scipy.interpolate import splrep,splev
+from flipper import *
 
 def cosineSqFilter(map,lMin,lMax,vkMaskLimits=None):
     filteredMap = map.copy()

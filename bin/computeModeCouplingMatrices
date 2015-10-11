@@ -2,13 +2,10 @@
 
 # generates the mode-coupling matrices per patch and stores them as pickles.
 
+
+import scipy, pickle
 from flipper import * 
-
-import modeCoupling as mcm
-import pickle
-import scipy
-
-
+from speck import modeCoupling as mcm
 
 def getNoiseAndWeightMapsPerPatch(patchDir, freqs, iPatch,\
                                   nDivs, taper, theoryFile,\

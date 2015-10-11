@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # uses SkyMap by Joe Fowler
 from flipper import *
-import skyMap 
-import speckMisc
+from speck import skyMap, speckMisc
 
 p = flipperDict.flipperDict()
 p.readFromFile(sys.argv[1])

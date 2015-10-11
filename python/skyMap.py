@@ -11,10 +11,9 @@ J. Fowler, Princeton
 December 1-2, 2009
 """
 
-import os
-import liteMap, utils
-import numpy, pylab, scipy, astLib
-import matplotlib.patches as patches
+import os, numpy, scipy, astLib.astPlots
+from matplotlib import patches, pylab
+from flipper import liteMap, utils
 
 class dummy(object): pass
 

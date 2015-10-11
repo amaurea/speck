@@ -1,21 +1,8 @@
 #!/usr/bin/env python
-
-
-from flipper import *
-#from scipy.integrate import 
+import scipy, numpy, os, random, sys, pickle, time
 from scipy.interpolate import splev,splrep
-from flipper import *
 from numpy.fft import fftshift,fftfreq,fft2,ifft2, ifftshift
-from scipy import interpolate
-from scipy import *
-import scipy
-import os
-import random
-import sys
-import pickle
-import time
-
-
+from flipper import *
 
 def makeTemplate(m, wl, ell, maxEll, outputFile = None):
     """
@@ -46,14 +33,9 @@ def makeTemplate(m, wl, ell, maxEll, outputFile = None):
             w = (w_hi-w_lo)*(trueL - l_f[i,j]) + w_lo
             p2d.powerMap[i,j] = w
 
-
-
-            
     if outputFile != None:
         p2d.writeFits(outputFile, overWrite = True)
     return p2d
-
-
 
 def trimShiftKMap(kMap,elTrim,Lx,Ly,lx,ly):
     """

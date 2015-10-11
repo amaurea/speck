@@ -1,2 +1,0 @@
-# speck
-Thibaut's speck
